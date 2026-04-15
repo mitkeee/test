@@ -1,0 +1,36 @@
+Vprašanje 3
+Neodgovorjeno
+Točk 0,00 od 3,00
+Vprašanje z zastavico
+
+Let's define an operator
+
+I_n : C([a, b]) -> S_{1,x},
+
+such that
+
+f(x) -> sum_{i=0}^{n} f(x_i) H_i(x),
+
+where H_i represents the so called hat function. On tutorials we showed that I_n is a linear and positive operator. In Matlab implement a method that assigns a given function f a continuous piecewise linear function I_n f, which is determined by the requirement
+
+I_n f(x_i) = f(x_i),   for all x_i in x_n,
+
+where
+
+x_n = {(2i - n)/n; i = 0, 1, ..., n},   n in N.
+
+Let
+
+k = 14.
+
+For a given function
+
+f(x) = |x| cos(x^2)
+
+on the interval [-1, 1] solve the following task:
+
+Plot (in the same figure) the original function f along with the I_j f for
+
+j = 3, 4, ..., k.
+
+If you will attach the figure to the final zip file enter 1, otherwise enter 0:

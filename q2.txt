@@ -1,0 +1,47 @@
+You are given a vector of points
+
+x = (x_i)_{i=1}^{N},   a <= x_1 < x_2 < ... < x_N <= b.
+
+On
+
+X = L^2([a, b])
+
+we define the following inner product
+
+<.,.>: X x X -> R,
+
+where
+
+<f, g> = sum_{i=1}^{N} p(x_i) f(x_i) g(x_i),   f, g in X,   (1)
+
+where p is given weight. The task is to find a polynomial of degree at most n which best approximates given function with respect to the inner product (1). In Matlab implement the function
+
+function sol = leastSquaresRho(fun, rho, x, n),
+
+that finds an element of the best least squares polynomial approximation for a function f and weight rho with respect to the inner product (1) and vector of points x.
+
+Test the function leastSquaresRho on the data:
+
+f(x) = 24 sin^2(pi*x/3),   p(x) = 3 * x^2 / pi,   [a, b] = [-1, 1],   x_0 = -1, x_{i+1} = x_i -
+
+Display the coefficients of the corresponding least squares approximating polynomial p of degree 4 and solve the following problems:
+
+(a) Enter the leading coefficient of the obtained polynomial p:
+Answer: -7,441139663894256
+
+(b) Evaluate the L_2 norm of the error when using the least squares method with a discrete inner product (1) for the approximating polynomial p:
+Answer: 0,0670433621606801
+
+(c) Compute the error
+
+||p - f||_{inf,[-1,1]}
+
+in a numerical way as
+
+||g||_{inf,[a,b]} ~ max_{i=0,1,...,100} |g(a + i(b - a)/100)|.
+
+Enter the result:
+Answer: 0,1164831513602008
+
+Pravilno
+Tocke za ta prispevek: 6,00/6,00.
